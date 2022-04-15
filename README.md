@@ -1,4 +1,3 @@
-# calculator
+# calculator flutter
 
-A new Flutter project.
-
+Projeto de estudo, feito com base em uma App existente
