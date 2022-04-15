@@ -11,34 +11,36 @@ class Keyboard extends StatelessWidget {
       height: 500,
       child: Column(children: [
         ButtonRow([
-          Button(text: 'C', cb: cb),
-          Button(text: '%', cb: cb),
-          Button(text: '<<', cb: cb),
-          Button.operation(text: '/', cb: cb),
+          Button.dark(text: 'C', cb: cb),
+          Button.result(text: '=', cb: cb),
         ]),
+        SizedBox(height: 4),
         ButtonRow([
           Button(text: '7', cb: cb),
           Button(text: '8', cb: cb),
           Button(text: '9', cb: cb),
-          Button.operation(text: 'X', cb: cb),
+          Button.operation(text: '/', cb: cb),
         ]),
+        SizedBox(height: 4),
         ButtonRow([
           Button(text: '4', cb: cb),
           Button(text: '5', cb: cb),
           Button(text: '6', cb: cb),
-          Button.operation(text: '-', cb: cb),
+          Button.operation(text: 'x', cb: cb),
         ]),
+        SizedBox(height: 4),
         ButtonRow([
           Button(text: '1', cb: cb),
           Button(text: '2', cb: cb),
           Button(text: '3', cb: cb),
-          Button.operation(text: '+', cb: cb),
+          Button.operation(text: '-', cb: cb),
         ]),
+        SizedBox(height: 4),
         ButtonRow([
           Button(text: '00', cb: cb),
           Button(text: '0', cb: cb),
-          Button(text: ',', cb: cb),
-          Button.result(text: '=', cb: cb),
+          Button(text: '.', cb: cb),
+          Button.operation(text: '+', cb: cb),
         ])
       ]),
     );

@@ -13,6 +13,11 @@ class Button extends StatelessWidget {
     @required this.cb,
     this.color = DEFAULT,
   });
+  Button.dark({
+    @required this.text,
+    @required this.cb,
+    this.color = DARK,
+  });
   Button.operation({
     @required this.text,
     @required this.cb,
